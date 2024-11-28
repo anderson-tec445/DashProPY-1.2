@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Projetos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="dashboard">
+        <aside class="sidebar">
+            <h2>Meus Projetos</h2>
+            <ul id="project-list"></ul>
+        </aside>
+        <main class="content">
+            <div id="project-details">
+                <iframe id="project-frame" src="" frameborder="0"></iframe>
+                <p id="project-description">Selecione um projeto para exibir.</p>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
